@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-		sh 'wget https://jenkins.heptet.us/job/github/job/kaymccormick-com/job/master/lastSuccessfulBuild/artifact/build/kaymccormick-com.tar.gz'
+		sh 'wget -q https://jenkins.heptet.us/job/github/job/kaymccormick-com/job/master/lastSuccessfulBuild/artifact/build/kaymccormick-com.tar.gz'
             }
         }
     }
